@@ -8,7 +8,7 @@ class UserData {
         static constraints = {
                 userId  blank: false, unique: true, matches: "^[0-9]*\$", validator: { val1 ->
                         if (val1.length() != 10) {
-                                return [('length')]
+                                return [('lengthEqualToTen')]
 
                         }
                 }
@@ -20,5 +20,4 @@ class UserData {
                 }
                 userName blank: false
         }
-
 }

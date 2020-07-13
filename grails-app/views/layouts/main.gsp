@@ -31,9 +31,9 @@
 </nav>
 
 <g:layoutBody/>
-<%--
-<div class="footer row" role="contentinfo">
-    <div class="col">
+
+<div class="footer row" role="contentinfo" >
+ <%--   <div class="col">
         <a href="http://guides.grails.org" target="_blank">
             <asset:image src="advancedgrails.svg" alt="Grails Guides" class="float-left"/>
         </a>
@@ -56,8 +56,8 @@
         </a>
         <strong class="centered"><a href="https://grails-slack.cfapps.io" target="_blank">Join the Community</a></strong>
         <p>Get feedback and share your experience with other Grails developers in the community <a href="https://grails-slack.cfapps.io" target="_blank">Slack channel</a>.</p>
-    </div>
-</div>--%>
+    </div> --%>
+</div>
 
 
 <div id="spinner" class="spinner" style="display:none;">

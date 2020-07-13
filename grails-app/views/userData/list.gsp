@@ -8,19 +8,14 @@
 <body>
 <div class="nav" role="navigation">
     <ul>
-        <li><g:link class="create" action="upload">Upload Data</g:link></li>
+        <li><g:link class="create" action="upload">Upload File</g:link></li>
     </ul>
 </div>
 <div id="list-userData" class="content scaffold-list" role="main">
-    <h1>UserData List</h1>
+    <h1>User Data List</h1>
     <g:if test="${flash.message}">
         <div class="message" role="status">${flash.message}</div>
     </g:if>
-    <g:hasErrors bean="${userDataSave}">
-        <div class="errors">
-            <g:renderErrors bean="${userDataSave}" as="list" />
-        </div>
-    </g:hasErrors>
     <table>
         <thead>
         <tr>
