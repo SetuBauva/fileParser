@@ -2,7 +2,9 @@ package com.demo.model
 
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
-
+/**
+* Class to unit test UserData constraints
+ */
 class UserDataSpec extends Specification implements DomainUnitTest<UserData> {
 
     def setup() {

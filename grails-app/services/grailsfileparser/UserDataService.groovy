@@ -3,9 +3,20 @@ package grailsfileparser
 import com.demo.model.UserData
 import grails.gorm.transactions.Transactional
 
+/**
+* Service to parse text file and upload data
+ */
 @Transactional
 class UserDataService {
 
+    /**
+     * Parse the uploaded file and save in DataBase if no errors in file.
+     * If errors exist rollback and bring data to initial state and return errors
+     * to controller
+     *
+     * @param file which is to be parsed
+     * @return Map of result which contains information of file parsing success or failure
+     */
     def parseFile(def file) {
 
         def data
